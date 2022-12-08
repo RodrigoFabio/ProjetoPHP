@@ -1,0 +1,89 @@
+body{
+    background-image: linear-gradient(45deg,dodgerblue, rgb(107, 226, 107));
+}
+.box{
+    background-color: rgba(0,0,0,0.8);
+    position: absolute;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    padding:15px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 30%;
+}
+fieldset{
+    border:3px solid dodgerblue;
+}
+legend{
+    border:1px solid dodgerblue;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: dodgerblue;
+    font-size: 18;
+}
+.inputBox{
+    position: relative;
+}
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color:white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+.labelInput{
+    position: absolute;
+    top:0px;
+    left:0px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.inputUser:focus ~ .labelInput, .inputUser:valid ~ .labelInput{
+    top:-20px;
+    color:dodgerblue;
+    font-size: 12px;
+}
+
+#dataNascimento{
+    background-color:white;
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+
+#submit{
+   background-image: linear-gradient(to right, dodgerblue,rgb(96, 4, 96));
+   border: none;
+   padding:15px;
+   color: white;
+   font-size: 15px;
+   cursor: pointer;
+   width: 100%;
+   border-radius: 10px;
+}
+#submit:hover{
+    background-image: linear-gradient(to right, rgb(8, 106, 205), rgb(121, 5, 121));
+}
+
+#voltar{
+    text-decoration: none;
+    color: white;
+    border: 3px solid dodgerblue;
+    border-radius: 10px;
+    padding: 10px;
+    top:20%;
+    left:10%;
+}
+#voltar:hover{
+    background-color: dodgerblue;
+
+}
